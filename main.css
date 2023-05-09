@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Edu+TAS+Beginner:wght@600&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+  background-color:#787878; 
+}
+
+
+.container{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.message_box{
+   background:white;
+   border:1px solid #292d30;
+   height: 250px;
+   border-radius:10px;
+   
+  
+    
+}
+
+
+.message_box h3{
+    width:100%;
+    text-transform:uppercase;
+    font-weight:bolder;
+    border-radius:10px 10px 0px 0px;
+    text-align:center;
+    padding:20px 10px;
+    background:linear-gradient(to right,#61b8ff,#1389eb);
+    color:white;
+    font-size:1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.form_group{
+    padding:10px 0px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center ;
+    align-items:center;
+    height:70%;
+    gap:40px;
+}
+
+.form_group div{
+    
+    width:100%;
+    padding:10px;
+    display:flex;
+    gap:0px;
+    margin-top:-70px;
+}
+
+.form_group input,#icon{
+    width:90%;
+    padding:10px;
+    border-color:#4d5e6b;
+    font-family: 'Ubuntu', sans-serif;
+    border:1.5px solid black;
+    border-radius: 5px;
+    
+}
+
+
+#icon{
+   width:30px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   padding:2px 0px;
+   border:none;
+
+};
+
+#icon .fa{
+    margin:auto;
+}
+
+
+#btn{
+     position:relative;
+     top:-80px;
+     left:100px;
+    padding:20px 0px;
+    width:50%;
+    font-weight:bolder;
+    background:linear-gradient(15deg,#61b8ff,#1389eb);
+    border:none;
+    font-family: 'Ubuntu', sans-serif;
+    display:block;
+}
+
+
+.secret_box{
+    position:absolute;
+    width:60%;
+    height:200px;
+    background-color:white;
+    top:50%;
+    left:50%;
+    transform:translate(-55%,-55%);
+    border:4px solid white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center ;
+    align-items:center;
+    border:1px solid #61b8ff;
+    border-radius:20px 0px 20px 0px;
+    box-shadow: 5px 5px 2px 50px #222929;
+    visibility:hidden;
+    z-index:10;
+    transition:1s;
+    
+    
+    
+}
+
+@keyframes visible{
+    0%{opacity:0.1;}
+    20%{opacity:0.3;}
+    50%{opacity:0.6;}
+    80%{opacity:0.8;}
+    100%{opacity:1;}
+}
+
+@keyframes visibler{
+    0%{opacity:0.1;}
+    20%{opacity:0.3;}
+    50%{opacity:0.6;}
+    80%{opacity:0.8;}
+    100%{opacity:1;}
+}
+
+
+.secret_box #delete{
+    position: absolute;
+    border:.1px solid #61b8ff;
+    padding:5px 10px;
+    top:10px;
+    right:10px;
+    cursor:pointer;
+    z-index:3;
+
+}
+
+.secret_box #secret,.userTag{
+    width:90%;
+    font-size:1.5rem;
+    text-align:center;
+    font-weight:900;
+    word-wrap:break-word;
+    padding:10px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+
+.secret_box .userTag{
+   position:relative;
+   top:5px;
+}
+
+
+@keyframes shake{
+    0%,100%{transform:translateX(-3px)}
+    20%,70%{transform:translateX(3px)}
+    40%{transform:translateX(-3px)}
+    60%{transform:translateX(3px)}
+    80%{transform:translateX(-3px)}
+}
+
+@keyframes shaker{
+    0%,100%{transform:translateX(-3px)}
+    20%,70%{transform:translateX(3px)}
+    40%{transform:translateX(-3px)}
+    60%{transform:translateX(3px)}
+    80%{transform:translateX(-3px)}
+}
